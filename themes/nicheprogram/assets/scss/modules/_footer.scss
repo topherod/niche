@@ -1,0 +1,91 @@
+.footer-container {
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+	background-color: $niche--white;
+
+	#footer {
+		max-width: map-get($breakpoints, xxlarge);
+		@include grid-row();
+		padding: 50px 3%;
+		@include breakpoint(medium){
+	    padding: 50px 50px 30px;
+	  }
+
+	}
+
+	.menu-header {
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding-right: 0;
+		margin-bottom: 1.25em;
+		text-align: left;
+		@include breakpoint(medium){
+   		padding-right: 30px;
+  	}
+	}
+	.footer-menu {
+		padding-right: 0;
+		list-style-type: none;
+		margin: 0 0 50px;
+		text-align: left;
+		li {
+			margin-bottom: 1em;
+			line-height: 1.25em;
+		}
+		a {
+			color: $niche__font-color;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		@include breakpoint(medium){
+   		padding-right: 30px;
+  	}
+	}
+}
+
+.footer-content {
+	font-size: 13px;
+	margin-bottom: 50px;
+	text-align: center;
+	@include breakpoint(large){
+   	text-align: left;
+  }
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.footer-content__contact {
+	.footer-logo--secondary {
+		display: none;
+		margin-top: 25px;
+		@include breakpoint(large){
+	   	display: block;
+	  }
+	}
+}
+
+.footer-content__social-share {
+	display: block;
+	text-align: center;
+	@include breakpoint(large){
+   	display: none;
+  }
+  a {
+  	font-size: 25px;
+  	padding: 15px;
+  }
+  .footer-logo--secondary {
+  	max-width: 150px;
+  	display: block;
+  	margin: 25px auto;
+  }
+}
+
+.footer-logo {
+	max-width: 100px;
+	margin-bottom: 25px;
+}

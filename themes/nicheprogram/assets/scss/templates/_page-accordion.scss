@@ -1,0 +1,65 @@
+.page-template-page-accordion {
+
+	.accordion-container {
+		margin-bottom: 50px;
+		max-width: 1000px;
+		
+		.accordion-title {
+			border-left: none;
+			border-right: none;
+			font-size: 1rem;
+			color: $niche__font-color;
+			background-color: $true-white;
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+			padding-right: 2.75rem;
+			&:hover,
+			&:focus {
+				background-color: $true-white;
+			}
+		}
+		//plus minus
+		.accordion-title::before {
+			color: white;
+			background-color: $blue--light;
+			width: 25px;
+			height: 25px;
+			text-align: center;
+			top: 40%;
+			font-size: 25px;
+		}
+		.accordion-content {
+			border: none;
+			color: $niche__font-color;
+		}
+
+		.accordion-item {
+  		border-left: 10px solid $white; 
+  		&.is-active {
+  			border-left: 10px solid $blue--light; 
+
+  		}
+		}
+	}
+	.encyclopedia-link-list {
+		list-style: none;
+		margin: 0;
+		.link-list-item {
+			padding: 0;
+			margin: 0;
+			a {
+				border-top: 1px solid $grey--light;
+				color: $grey--dark;
+				display: block;
+				font-size: .9em;
+				font-weight: 600;
+				padding: 20px 40px;
+				transition: all .3s ease;
+				&:hover {
+					background: rgba($grey--light, .5);
+				}
+			}
+		}
+	}
+
+}

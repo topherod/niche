@@ -1,0 +1,65 @@
+.callout-container { 
+  width: 100%;
+  background-color: $grey--lighter;
+  border-left: 10px solid $blue--light; 
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 75px;
+  max-width: 1000px;
+
+  .callout-content {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      color: $niche__font-color;
+      text-transform: capitalize;
+    }
+  }
+
+  .callout-button {
+    border: 1px solid $niche__font-color;
+    padding: 15px 100px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $niche__font-color;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    &:hover {
+      background-color: $grey--light;
+    }
+  }
+  .callout-image {
+    min-height: 180px;
+    background-size: cover;
+  }
+
+  @include breakpoint(medium) {
+    height: 180px;
+    margin-bottom: 100px;
+
+    .callout-content {
+      // text-align: left;
+      position: absolute;
+      margin-top: -90px;
+      top: 70%;
+      padding: 0 0 0 50px;
+      height: 180px;
+    }
+  }
+
+}
+
+.callout-about-niche {
+  padding-top: 50px;
+  border-top: 1px solid $grey--light;
+  margin-bottom: 50px;
+  @include breakpoint(medium) {
+    margin-bottom: 75px;
+  }
+}

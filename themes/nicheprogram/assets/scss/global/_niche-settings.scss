@@ -1,0 +1,90 @@
+//  Niche Brand Settings
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Brand Colors
+//	 2. Typography
+
+// 1. Brand Colors
+// ---------------
+
+$purple: #57068c;
+$purple--light: #6e0eac;
+
+$grey--lighter: #f7f7f7;
+$grey--light: #efefef;
+$grey--dark: #2e2e2e;
+$grey--medium: #adadad;
+$grey--darker: #717171;
+
+$blue--light: #95aedb;
+
+$true-white: #FFFFFF;
+$true-black: #000000;
+$off-white: #f7f7f7;
+
+$transparent: rgba(255, 255, 255, 0);
+
+$niche--primary: $purple;
+$niche--primary--lighter: $purple--light;
+$niche--secondary: $blue--light;
+$niche--white: $off-white;
+$niche--black: $grey--dark;
+$niche__font-color: $grey--dark;
+
+
+// 2. Typography
+// -------------
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Book.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-BookItalic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Light.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-LightItalic.otf');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Medium.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-MediumItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.otf');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-BoldItalic.otf');
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+$niche-font: 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif;

@@ -1,0 +1,48 @@
+.table-container {
+	margin-bottom: 50px;
+
+	table tbody tr {
+		background-color: $true-white;
+	}
+	table tbody {
+		border: none;
+	}
+	
+	th {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 0.8em;
+		letter-spacing: 0.1em;
+		color: $blue--light;
+	}
+
+	.category-title {
+		color: $blue--light;
+		margin-bottom: 0;
+	}
+
+	.value-amount {
+		text-align: center;
+	}
+
+	.value-content {
+		margin-bottom: 0.5em;
+	}
+
+	.value-subtext {
+		font-size: 0.9em;
+		font-weight: 100;
+		margin-bottom: 0;
+	}
+
+}
+
+.table__category-title td {
+	padding-bottom: 0;
+	padding-top: 15px;
+}
+
+.table__value-item {
+	border-bottom: 1px solid $grey--light;
+}
+

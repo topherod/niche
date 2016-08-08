@@ -1,0 +1,229 @@
+#tribe-events {
+	position: relative;
+	margin-bottom: 0;
+	table tbody tr:nth-child(even) {
+		background-color: $true-white;
+	}
+	table thead, table tfoot {
+		background-color: $blue--light;
+	}
+	.tribe-events-calendar th {
+		height: 20px;
+		padding: 10px 0;
+		color: $true-white;
+	}
+
+	.tribe-events-single-event-title,
+	h2.tribe-events-page-title {
+		text-align: left;
+		display: inline;
+		line-height: 1.15em;
+		margin-bottom: 1em;
+	}
+
+	.tribe-events-month-event-title {
+		font-size: 1.15em;
+		line-height: 0.8em;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 0.1em;
+		a {
+			color: $niche__font-color;
+		}
+	}
+
+	#tribe-events-header {
+		margin-bottom: 50px;
+	}
+
+	.tribe-events-schedule  {
+		color: $blue--light;
+		h2 {
+			font-size: 1em;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		margin-bottom: 25px;
+		padding-bottom: 25px;
+		padding-top: 15px;
+		border-bottom: 1px solid $grey--light;
+		@include breakpoint(medium) {
+			margin-bottom: 50px;
+			padding-bottom: 50px;
+			padding-top: 35px;
+		}
+	}
+
+	.tribe-events-tooltip {
+		border: none;
+		box-shadow: 0 2px 4px -2px $grey--medium;
+		.entry-title {
+			padding: 30px 10px 10px  !important;
+			font-size: 1.5em !important;
+			text-align: center;
+		}
+		.tribe-events-event-body {
+			padding: 0 30px 30px ;
+			text-align: center;
+		}
+		.tribe-event-duration {
+			margin-bottom: 2em;
+		}
+		.tribe-event-duration + .tribe-event-description {
+			margin-top: -1.5em;
+		}
+		.tribe-event-duration abbr{
+			color: $blue--light;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			margin-bottom: 1em;
+		}
+		.tribe-event-description {
+			font-size: 1.25em;
+			padding-top: 1em;
+		}
+	}
+	.tribe-events-present {
+		background-color: $grey--light;
+	}
+
+	.tribe-events-cal-links,
+	.tribe-events-ical,
+	.tribe-bar-filters,
+	#tribe-bar-collapse-toggle,
+	.tribe-bar-views-list {
+		display: none !important;
+		margin: 0;
+	}
+
+	#tribe-bar-views {
+		position: relative;
+		z-index: 2;
+		label, 
+		select {
+			display: inline;
+			width: auto;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			font-size: 0.8em;
+		}
+		select {
+			cursor: pointer;
+			&:focus, 
+			&:acitve {
+				outline: none;
+			}
+		}
+		@include breakpoint(medium) {
+			position: absolute;
+			right: 0;
+			top: 20px;
+		}
+	}
+
+	.tribe-events-nav-previous {
+		float: left;
+	}
+	.tribe-events-nav-next {
+		float: right;
+	}
+
+	.tribe-events-nav-next,
+	.tribe-events-nav-previous {
+		padding-top: 25px;
+		font-size: 0.9em;
+		a {
+			text-transform: uppercase;
+			color: $blue--light;
+			font-weight: bold;
+			letter-spacing: 0.1em;
+		}
+	}
+	.tribe-event-schedule-details {
+		background-color: $blue--light;
+		color: $true-white;
+		padding: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 0.9em;
+		margin-bottom: 15px;
+	}
+
+	.tribe-events-list-event-title {
+		font-size: 1.35em;
+		font-weight: 100;
+		a {
+			color: $niche__font-color;
+		}
+	}
+	.type-tribe_events {
+		margin-bottom: 30px;
+	}
+	.tribe-events-read-more {
+		color: $niche__font-color;
+		font-weight: bold;
+		font-size: 0.8em;
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+	.tribe-events-single {
+		margin-bottom: 0;
+		border-bottom: 1px solid $grey--light;
+	}
+
+	.tribe-events-venue-map {
+		float: left;
+		width: 100%;
+		@include breakpoint(large) {
+			width: 50% !important;
+		}
+	}
+
+	nav {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.tribe-events-event-meta:first-child {
+		border: none;
+	}
+	.see-more-button {
+		margin-top: 30px;
+		font-size: 1em;
+		text-transform: uppercase;
+		color: $niche__font-color;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		border: 1px solid $niche__font-color;
+		padding: 10px 2em;
+	}
+
+	.tribe-events-meta-group {
+		margin-bottom: 30px;
+		dd:not(.tribe-venue){
+			margin-bottom: 20px;
+		}
+		dt {
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+		}
+	}
+	.tribe-events-has-events {
+		background-image: url('../images/bullet.png');
+		background-position-y: 10px;
+		background-position-x: 50%;
+		background-repeat: no-repeat;
+
+	}
+	.tribe-events-event-url {
+		a {
+			word-wrap: break-word;
+		}
+	}
+}
+
+.tribe-events-promo {
+	display: none;
+}

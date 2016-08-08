@@ -1,0 +1,287 @@
+body.disable-scroll.page-template-homepage {
+	overflow-y: auto;
+}
+.page-template-homepage {
+	font-family: $niche-font;
+	section {
+		margin: 0;
+	}
+	.homepage-header {
+		background-position: center;
+		background-size: cover;
+		padding: 100px 60px;
+		.logo {
+			display: block;
+			max-width: 50%;
+			position: relative;
+			img {
+				height: auto;
+				max-width: 100%;
+			}
+			h1 {
+				font-size: 14px;
+				font-weight: 600;
+				margin-top: 10px;
+				width: 333px;
+				max-width: 100%;
+				text-align: center;
+			}
+		}
+		.homepage-header-text {
+			display: block;
+			font-size: 32px;
+			font-weight: 100;
+			line-height: 1.1em;
+			padding: 40px 0 20px 0;
+			width: 480px;
+			max-width: 50%;
+		}
+		display: none;
+		@media #{$large-up} {
+			display: block;
+		}
+	}
+	.off-canvas-content {
+		margin-top: 0;
+	}
+	.homepage-social-header {
+		padding: 0;
+	  .social-share-bar {
+	  	display: block;
+	    position: relative;
+	  }
+	}
+	.homepage-navigation {
+		background: $purple;
+		margin: 0;
+		display: none;
+		@media #{$large-up} {
+			display: block;
+		}
+	}
+	.homepage-section-one {
+		background: $off-white;
+		padding: 40px;
+		text-align: center;
+		@media #{$large-up} {
+			padding: 100px;
+		}
+		.homepage-section-one-title {
+			font-size: 35px;
+			margin-bottom: 1em;
+		}
+		.homepage-section-one-description {
+			color: $grey--darker;
+			line-height: 1.4em;
+			font-size: .9em;
+			padding: 0 20px;
+			margin-bottom: 2em;
+			@media #{$large-up} {
+				font-size: 1.2em;
+				padding: 0 20%;
+			}
+		}
+		a.homepage-section-one-cta {
+			background: $transparent;
+			border: 1px solid $purple;
+			color: $purple;
+			padding: 20px 60px;
+			text-transform: uppercase;
+			&:hover {
+				background: $purple;
+				color: $true-white;
+			}
+		}
+	}
+	.homepage-icons {
+		padding: 60px;
+		.icon {
+			margin-bottom: 40px;
+			text-align: center;
+			@media #{$small-only} {
+				&:nth-child(2n + 1) {
+					clear: both;
+				}
+			}
+			@media #{$medium-up} {
+				&:nth-child(3n + 1) {
+					clear: both;
+				}
+			}
+			img {
+				display: block;
+				margin: auto;
+				max-width: 100%;
+			}
+		}
+		a {
+			text-transform: uppercase;
+			color: $grey--darker;
+			font-size: .8em;
+			letter-spacing: .1em;
+			line-height: 1;
+			@media #{$medium-up} {
+				font-size: 1.1em;
+			}
+		}
+	}
+	.homepage-slider {
+		.orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
+			background: $transparent;
+		}
+		.orbit-previous, .orbit-next {
+			font-size: 2em;
+		}
+		.orbit-slide {
+			@include clearfix();
+			background: $purple;
+			color: $true-white;
+			padding: 50px;
+			position: relative;
+			height: 100%;
+			font-size: .8em;
+			text-align: center;
+			@media #{$medium-up} {
+				font-size: 1em;
+				padding: 100px;
+				text-align: left;
+			}
+			&.no-image {
+				text-align: center;
+			}
+			&.purple {
+				background-color: $purple;
+			}
+			&.grey {
+				background-color: $grey--dark;
+			}
+			&.blue {
+				background-color: $blue--light;
+			}
+		}
+		.homepage-slider-title {
+			font-size: 1.5em;
+			@media #{$large-up} {
+				font-size: 2.1em;
+			}
+		}
+		.homepage-slider-image {
+			display: block;
+			text-align: center;
+			width: 100%;
+			@media #{$medium-up} {
+				float: left;
+				width: 30%;
+			}
+			img {
+				width: 90%;
+				max-width: 200px;
+				margin-bottom: 30px;
+				@media #{$large-up} {
+					max-width: 300px;
+				}
+			}
+		}
+		a.homepage-slider-button {
+			background: $transparent;
+			border: 1px solid $true-white;
+			color: $true-white;
+			margin-top: 20px;
+			padding: 20px 60px;
+			text-transform: uppercase;
+			&:hover {
+				background: $true-white;
+				color: $purple;
+			}
+		}
+		.orbit-bullets {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			button {
+				background: $transparent;
+				border: 2px solid $true-white;
+				width: 1em;
+				height: 1em;
+				&.is-active {
+					background: $true-white;
+				}
+			}
+		}
+	}
+	.homepage-important-numbers {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: $true-white;
+		padding: 60px;
+		position: relative;
+		text-align: center;
+		@media #{$large-up} {
+			padding: 160px 60px;
+		}
+		.important-number {
+			font-size: 4em;
+			position: relative;
+		}
+		.important-number-description {
+			font-weight: 600;
+			text-transform: uppercase;
+			padding: 0 40px;
+			position: relative;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba($true-black, .4);
+		}
+	}
+	.menu-overlay {
+		background: $transparent;
+	}
+}
+.homepage-menu {
+	display: block;
+	position: relative;
+	min-height: 50px;
+	width: 100%;
+}
+.homepage-navigation {
+	color: $true-white;
+	&.top-bar {
+		position: relative;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		height: 50px;
+		&.fixed {
+			position: fixed;
+		}
+	}
+	.menu {
+		text-align: center;
+		> li {
+			display: inline-block;
+			height: 50px;
+			line-height: 50px;
+			a {
+				color: $white;
+				font-size: .8em;
+				font-weight: 600;
+				letter-spacing: .1em;
+				text-transform: uppercase;
+			}
+			> .submenu {
+				position: absolute;
+				top: 50px;
+			}
+		}
+	}
+}

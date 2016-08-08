@@ -1,0 +1,98 @@
+main.container {
+  /* for sticky footer effect*/
+  min-height: 90vh;
+  position: relative;
+}
+
+#page {
+  @include grid-row();
+  margin-top: 30px;
+  nav,
+  .main-content {
+    padding: 0 3%;
+    @include breakpoint(smedium) {
+    }
+    @include breakpoint(medium) {
+     @include grid-column-offset(4);
+    }
+    @include breakpoint(large) {
+     @include grid-column-offset(3);
+     padding: 0 5%;
+    }
+    @include breakpoint(xlarge) {
+     @include grid-column-offset(3);
+    }
+    @include breakpoint(xxlarge) {
+      @include grid-column-offset(2);
+    }
+  }
+}
+
+.entry-content {
+  margin-bottom: 50px;
+  @include breakpoint(medium) {
+    margin-bottom: 75px;
+  }
+  img {
+    width: 100%;
+    margin: 25px 0;
+    padding: 0;
+    @include breakpoint(smedium) {
+      width: 50%;
+      margin: 0 5% 25px 0;
+    }
+    @include breakpoint(xlarge) {
+      width: 40%
+    }
+  }
+
+  ul {
+    margin-bottom: 2em;
+    margin-left: 0;
+    list-style-image: url('../images/bullet.png');
+    list-style-position: inside;
+
+    li {
+      margin-bottom: 0.75em;
+    }
+  }
+
+  ol li {
+    padding-left: 1em;
+  }
+
+  h4 {
+    font-weight: 100;
+    margin-top: 1.5em;
+  }
+  h5 {
+    font-weight: 100;
+  }
+
+  h6 {
+    font-size: 0.9em;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  .entry-content__banner {
+    background-color: $niche--white;
+    padding: 25px;
+    font-size: 2em;
+    color: $blue--light;
+    text-align: center;
+    max-width: 1000px;
+    .emphasize {
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    @include breakpoint(medium) {
+      padding: 30px 100px;
+    }
+  }
+
+}
+
+
